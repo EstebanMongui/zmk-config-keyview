@@ -10,7 +10,12 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 
-&out OUT_BLE
+behaviors{
+  to_usb{
+    compatible = "zmk,behavior-output-switch";
+    out=<&out OUT_USB>;
+  }
+}
 
 /* Uncomment this block if using RGB
 &led_strip {
