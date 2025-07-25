@@ -1,0 +1,10 @@
+{
+    behaviors {
+        out_ble: out_ble {
+            compatible = "zmk,behavior-output-select";
+            label = "BLE Output";
+            binding = <&output_ble>;
+        };
+    };
+};
+
