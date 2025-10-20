@@ -1,0 +1,15 @@
+/{
+    chosen {
+        zmk,display = &oled;
+    };
+
+    oled: oled {
+        compatible = "solomon,ssd1306fb";
+        label = "SSD1306";
+        width = <128>;
+        height = <32>;
+        i2c-bus = <&i2c0>;
+        i2c-address = <0x3C>;
+    };
+};
+
